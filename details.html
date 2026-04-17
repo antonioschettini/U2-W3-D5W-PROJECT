@@ -17,7 +17,7 @@
     />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <header>
+    <header class="mb-5">
       <!-- Inizio Navbar -->
       <nav
         class="navbar navbar-expand-md bg-body-tertiary px-3 position-fixed top-0 w-100 z-1"
@@ -62,7 +62,9 @@
       </nav>
       <!-- Fine Navbar -->
     </header>
-    <main class="flex-grow-1"></main>
+    <main class="flex-grow-1 h-25 mt-5">
+      <div class="container" id="details-container"></div>
+    </main>
     <!-- Footer -->
     <footer>
       <div class="text-center pb-1">E-commerce - <span id="year"></span></div>
@@ -72,7 +74,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="./home.js"></script>
     <script src="./details.js"></script>
   </body>
 </html>

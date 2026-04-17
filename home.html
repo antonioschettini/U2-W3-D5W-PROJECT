@@ -65,7 +65,28 @@
       </nav>
       <!-- Fine Navbar -->
     </header>
-    <main class="flex-grow-1"></main>
+    <main class="flex-grow-1 mt-5 pt-5">
+      <div id="error-message"></div>
+      <div class="container text-center mb-4">
+        <h1>Ecco i prodotti disponibili</h1>
+        <div
+          id="loading-spinner"
+          class="spinner-border text-primary ms-2"
+          role="status"
+        >
+          <span class="visually-hidden">Caricamento...</span>
+        </div>
+        <p>
+          Clicca sulle immagini per visualizzare i dettagli o vai nel
+          <a href="./backoffice.html" class="link-info">Backoffice</a> per
+          aggiungerne di nuovi.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="products-row" class="row g-4 justify-content-center"></div>
+      </div>
+    </main>
     <!-- Footer -->
     <footer>
       <div class="text-center pb-1">E-commerce - <span id="year"></span></div>

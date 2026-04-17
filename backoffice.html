@@ -67,39 +67,90 @@
     <main
       class="flex-grow-1 d-flex flex-column mt-5 align-content-center align-items-center"
     >
+      <div id="error-message"></div>
       <div class="mb-3">
         <h1 class="text-center">Compila il form per inserire un prodotto</h1>
       </div>
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
+      <form class="mb-2" id="product-form">
+        <div class="">
+          <label for="name" class="form-label"></label>
           <input
-            type="email"
+            type="text"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            id="name"
+            aria-describedby="textHelp"
+            required
           />
           <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
+            Inserisci il nome del prodotto
           </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
+        <div class="">
+          <label for="description" class="form-label"></label>
           <input
-            type="password"
+            type="text"
             class="form-control"
-            id="exampleInputPassword1"
+            id="description"
+            aria-describedby="textHelp"
+            required
           />
+          <div id="" class="form-text">
+            Inserisci la descrizione del prodotto
+          </div>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
+        <div class="">
+          <label for="brand" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="brand"
+            aria-describedby="textHelp"
+            required
+          />
+          <div id="" class="form-text">Inserisci la marca</div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="">
+          <label for="imageUrl" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="imageUrl"
+            aria-describedby="textHelp"
+            required
+          />
+          <div id="i" class="form-text">Inserisci il link dell' Immagine</div>
+        </div>
+        <div class="mb-lg-2">
+          <label for="price" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="price"
+            aria-describedby="textHelp"
+          />
+          <div id="" class="form-text">Inserisci il prezzo</div>
+        </div>
+        <form class="mb-2 text-center" id="product-form">
+          <div class="mt-2 text-center">
+            <button type="submit" id="btn-crea" class="btn btn-primary">
+              Salva nuovo
+            </button>
+            <button
+              type="submit"
+              id="btn-modifica"
+              class="btn btn-warning d-none"
+            >
+              Conferma Modifica
+            </button>
+            <button
+              type="button"
+              id="btn-elimina"
+              class="btn btn-danger d-none"
+            >
+              Elimina
+            </button>
+          </div>
+        </form>
       </form>
     </main>
     <!-- Footer -->
@@ -111,7 +162,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="./home.js"></script>
     <script src="./backoffice.js"></script>
   </body>
 </html>
