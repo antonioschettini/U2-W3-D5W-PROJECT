@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-commerce/details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/png;base64,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"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <!-- Inizio Navbar -->
+      <nav
+        class="navbar navbar-expand-md bg-body-tertiary px-3 position-fixed top-0 w-100 z-1"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./home.html">E-COMMERCE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./backoffice.html">Backoffice</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Fine Navbar -->
+    </header>
+    <main class="flex-grow-1"></main>
+    <!-- Footer -->
+    <footer>
+      <div class="text-center pb-1">E-commerce - <span id="year"></span></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./home.js"></script>
+    <script src="./details.js"></script>
+  </body>
+</html>
