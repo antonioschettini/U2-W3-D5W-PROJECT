@@ -20,9 +20,9 @@ if (productId) {
       // Creiamo la scheda singola
       container.innerHTML = `
         <div class="col">
-          <div class="card shadow">
+          <div class="card shadow glass-card">
             <img src="${prodotto.imageUrl}" class="card-img-top" alt="${prodotto.name}">
-            <div class="card-body text-center">
+              <div class="card-body text-center">
               <h1>${prodotto.name}</h1>
               <p class="lead">${prodotto.description}</p>
               <h3 class="text-primary">${prodotto.price}€</h3>
@@ -30,8 +30,7 @@ if (productId) {
               <a href="home.html" class="btn btn-outline-secondary">Torna indietro</a>
             </div>
           </div>
-        </div>
-      `;
+        </div>`;
     })
     .catch((err) => console.log("Errore caricamento dettagli", err));
 }

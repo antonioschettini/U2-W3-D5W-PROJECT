@@ -13,10 +13,9 @@ const mostraErrore = (messaggio) => {
   const container = document.getElementById("error-message");
   container.innerHTML = `
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      <strong>Attenzione!</strong> ${messaggio}
-      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      </div>
-  `;
+        <strong>Attenzione!</strong> ${messaggio}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
 };
 // Parte per il modifica put api
 // Azione del modifica in backoffice

@@ -1,0 +1,43 @@
+@keyframes battito {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.glass-card {
+  /* Un grigio scuro più solido (85% coprente) */
+  background-color: rgba(45, 45, 45, 0.85) !important;
+
+  /* Sfocatura leggera per l'effetto opaco */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Un bordo sottile grigio per dare struttura */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body {
+  background-image: url(./placidplace-stars-12673_512.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.zoom-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-card:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.zoom-card:hover .btn-primary {
+  animation: battito 1s infinite;
+}

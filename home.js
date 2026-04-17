@@ -60,19 +60,18 @@ const disegnaCard = (arrayProdotti) => {
     colonna.classList.add("col-12", "col-md-4", "col-lg-3");
     // modifico l'innerhtml per disegnarmi la card
     colonna.innerHTML = `
-            <div class="card h-100 shadow-sm text-center">
+            <div class="card h-100 shadow-sm text-center glass-card zoom-card">
                 <a href="./details.html?id=${prodotto._id}">
-                    <img src="${prodotto.imageUrl}" class="card-img-top" alt="${prodotto.name}" style="height: 200px; object-fit: cover;">
+                <img src="${prodotto.imageUrl}" class="card-img-top" alt="${prodotto.name}" style="height: 200px; object-fit: cover;">
                 </a>
-                <div class="card-body d-flex flex-column">
+                  <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${prodotto.name}</h5>
                     <p class="card-text text-secondary small">${prodotto.description}</p>
                     <p class="fw-bold mt-auto">${prodotto.price}€</p>
                     <a href="./details.html?id=${prodotto._id}" class="btn btn-primary btn-sm mb-1">Vedi Prodotto</a>
                   <a href="./backoffice.html?id=${prodotto._id}" class="btn btn-warning btn-sm">Modifica</a>
                 </div>
-            </div>
-        `;
+            </div>`;
 
     // Attacchiamo la colonna alla riga principale
     rigaContenitore.appendChild(colonna);
